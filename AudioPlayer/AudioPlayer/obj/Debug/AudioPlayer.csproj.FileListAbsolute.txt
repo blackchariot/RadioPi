@@ -1,0 +1,13 @@
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\AudioPlayer.exe.config
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\AudioPlayer.exe
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\AudioPlayer.pdb
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\obj\Debug\AudioPlayer.csprojResolveAssemblyReference.cache
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\obj\Debug\AudioPlayer.Properties.Resources.resources
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\obj\Debug\AudioPlayer.csproj.GenerateResource.Cache
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\obj\Debug\AudioPlayer.exe
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\obj\Debug\AudioPlayer.pdb
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\LibMplayerCommon.dll
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\LibImages.dll
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\LibMplayerCommon.pdb
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\LibImages.pdb
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\obj\Debug\AudioPlayer.MainForm.resources
