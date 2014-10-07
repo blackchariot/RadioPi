@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AudioPlayer
+namespace RadioPi
 {
-    public abstract class App
+    public abstract class App : Panel
     {
-        // vars
-        Panel parent = null;
+        // protected vars
+        protected Panel parent = null;
 
         #region Instantiation
 
@@ -20,7 +20,14 @@ namespace AudioPlayer
         /// <param name="parent">The panel holding the app.</param>
         protected App(Panel parent)
         {
+            //set parent
             this.parent = parent;
+
+            //dock in parent
+            parent.Controls.Add(this);
+            this.Dock = DockStyle.Fill;
+
+            //start the app
             OnStart();
         }
 
@@ -47,7 +54,7 @@ namespace AudioPlayer
         /// Called on each tick.
         /// </summary>
         protected abstract void OnUpdate();
-
+ 
         #endregion
 
         #region public events
@@ -71,7 +78,7 @@ namespace AudioPlayer
         /// <summary>
         /// Tell the app to Update.  This should only be called from the timer.
         /// </summary>
-        public void Update()
+        public new void Update()
         {
             OnUpdate();
         }

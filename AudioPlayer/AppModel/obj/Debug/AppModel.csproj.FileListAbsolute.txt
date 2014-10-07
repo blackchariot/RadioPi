@@ -1,0 +1,4 @@
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\AppModel.dll
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AudioPlayer\bin\Debug\AppModel.pdb
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AppModel\obj\Debug\AppModel.dll
+C:\Users\eolsen\Documents\GitHub\RadioPi\AudioPlayer\AppModel\obj\Debug\AppModel.pdb
