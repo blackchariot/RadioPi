@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<apps>
+  <app>
+    <name>Music</name>
+    <dll>AudioPlayer.dll</dll>
+    <icon-normal>player_n.png</icon-normal>
+    <icon-highlight>player_h.png</icon-highlight>
+  </app>
+</apps>

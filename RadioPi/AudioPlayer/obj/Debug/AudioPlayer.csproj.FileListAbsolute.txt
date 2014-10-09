@@ -1,0 +1,7 @@
+C:\Users\eolsen\Documents\GitHub\RadioPi\RadioPi\AudioPlayer\obj\Debug\AudioPlayer.csprojResolveAssemblyReference.cache
+C:\Users\eolsen\Documents\GitHub\RadioPi\RadioPi\RadioPi\apps\resources\player_h.png
+C:\Users\eolsen\Documents\GitHub\RadioPi\RadioPi\RadioPi\apps\resources\player_n.png
+C:\Users\eolsen\Documents\GitHub\RadioPi\RadioPi\RadioPi\apps\AudioPlayer.dll
+C:\Users\eolsen\Documents\GitHub\RadioPi\RadioPi\RadioPi\apps\AudioPlayer.pdb
+C:\Users\eolsen\Documents\GitHub\RadioPi\RadioPi\AudioPlayer\obj\Debug\AudioPlayer.dll
+C:\Users\eolsen\Documents\GitHub\RadioPi\RadioPi\AudioPlayer\obj\Debug\AudioPlayer.pdb
