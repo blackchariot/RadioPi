@@ -2,9 +2,8 @@
 <apps>
   <app>
     <name>Music</name>
-    <type>RadioPi.AudioPlayer</type>
-    <assembly>AudioPlayer</assembly>
     <dll>AudioPlayer.dll</dll>
+    <class>AudioPlayer</class>
     <icon-normal>player_n.png</icon-normal>
     <icon-highlight>player_h.png</icon-highlight>
   </app>

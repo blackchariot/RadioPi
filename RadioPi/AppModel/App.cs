@@ -51,10 +51,10 @@ namespace RadioPi
         protected abstract void OnSleep();
 
         /// <summary>
-        /// Called on each tick.
+        /// Called when the app goes to sleep.
         /// </summary>
-        protected abstract void OnUpdate();
- 
+        protected abstract void OnWake();
+
         #endregion
 
         #region public events
@@ -68,19 +68,19 @@ namespace RadioPi
         }
 
         /// <summary>
+        /// Tell the app to wake up.
+        /// </summary>
+        public void Wake()
+        {
+            OnWake();
+        }
+
+        /// <summary>
         /// Tell the app to go to sleep.
         /// </summary>
         public void Sleep()
         {
             OnSleep();
-        }
-
-        /// <summary>
-        /// Tell the app to Update.  This should only be called from the timer.
-        /// </summary>
-        public new void Update()
-        {
-            OnUpdate();
         }
 
         #endregion

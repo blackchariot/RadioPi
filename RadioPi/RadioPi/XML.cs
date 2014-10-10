@@ -22,6 +22,8 @@ namespace RadioPi
                        select new
                        {
                            name = app.Element("name"),
+                           appType = app.Element("type"),
+                           assembly = app.Element("assembly"),
                            dll = app.Element("dll"),
                            icoN = app.Element("icon-normal"),
                            icoH = app.Element("icon-highlight")
@@ -32,6 +34,8 @@ namespace RadioPi
             {
                 // build details dictionary
                 Dictionary<string, string> details = new Dictionary<string, string>();
+                details.Add("type", app.appType.Value);
+                details.Add("assembly", app.assembly.Value);
                 details.Add("dll", app.dll.Value);
                 details.Add("icoN", app.icoN.Value);
                 details.Add("icoH", app.icoH.Value);

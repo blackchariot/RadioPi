@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace RadioPi
         #region vars
 
         Dictionary<string, Dictionary<string, string>> menu;
+        List<App> apps = new List<App>();
 
         #endregion
 
@@ -44,7 +46,7 @@ namespace RadioPi
         {
         }
 
-        protected override void OnUpdate()
+        protected override void OnWake()
         {
         }
 
@@ -74,6 +76,22 @@ namespace RadioPi
 
         void icon_Click(object sender, EventArgs e)
         {
+            // convert to picture box
+            PictureBox icon = (PictureBox)sender;
+
+            // load app
+            Assembly dll = Assembly.LoadFrom(Application.StartupPath + "\\apps\\" + menu[icon.Name]["dll"].ToString());
+            Type appType = dll.GetType(menu[icon.Name]["type"], true);
+            //Type appType = Type.GetType(menu[icon.Name]["type"] + ", " + menu[icon.Name]["assembly"], true);
+
+            foreach (App app in apps)
+            {
+                if (appType == app.GetType())
+                {
+                    app.Wake();
+                    break;
+                }
+            }
         }
 
         #endregion
@@ -100,6 +118,16 @@ namespace RadioPi
                 icon.MouseDown += icon_MouseDown;
                 icon.MouseUp += icon_MouseUp;
                 icon.Click += icon_Click;
+
+                // create app
+                Assembly dll = Assembly.LoadFrom(Application.StartupPath + "\\apps\\" + menu.ElementAt(i).Value["dll"].ToString());
+                Type appType = dll.GetType(menu.ElementAt(i).Value["type"], true);
+                //Type appType = Type.GetType(
+                //    menu.ElementAt(i).Value["type"] + ", " + "apps\\" + menu.ElementAt(i).Value["assembly"], true);
+                Object obj = Activator.CreateInstance(appType, parent);
+                App app = (App)obj;
+                app.Visible = false;
+                apps.Add(app);
             }
         }
 

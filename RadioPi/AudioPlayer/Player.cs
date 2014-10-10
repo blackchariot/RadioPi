@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,7 @@ namespace RadioPi
 
         #endregion
 
-        #region
+        #region override events
 
         protected override void OnStart()
         {
@@ -46,8 +47,11 @@ namespace RadioPi
         {
         }
 
-        protected override void OnUpdate()
+        protected override void OnWake()
         {
+            this.Visible = true;
+            this.BringToFront();
+            this.BackColor = Color.Blue;
         }
 
         #endregion
